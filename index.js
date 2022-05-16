@@ -53,8 +53,8 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-        paths: ["node_modules/", "node_modules/@types"],
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".astro"],
+        paths: ["node_modules/", "node_modules/@types", "src"],
       },
     },
   },
@@ -162,6 +162,7 @@ module.exports = {
         mjs: "never",
         ts: "never",
         tsx: "never",
+        astro: "never",
       },
     ],
 
