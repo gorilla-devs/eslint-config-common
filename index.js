@@ -317,6 +317,52 @@ module.exports = {
         "@typescript-eslint/no-floating-promises": "error",
 
         /**
+         * No explicit any type
+         *
+         * See also: https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-explicit-any.md
+         */
+        "@typescript-eslint/no-explicit-any": [
+          "error",
+          { ignoreRestArgs: true },
+        ],
+
+        /**
+         * No implicit any type
+         *
+         * See also: https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-argument.md
+         */
+        "@typescript-eslint/no-unsafe-argument": "error",
+
+        /**
+         * No unsafe return
+         *
+         * See also: https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-return.md
+         */
+        "@typescript-eslint/no-unsafe-return": "error",
+
+        /**
+         * Prefer optional chaining over chained logical ands
+         *
+         * See also: https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-return.md
+         */
+        "@typescript-eslint/prefer-optional-chain": "error",
+
+        /**
+         * Function returning a promise must be async
+         *
+         * See also: https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/promise-function-async.md
+         */
+        "@typescript-eslint/promise-function-async": [
+          "error",
+          {
+            checkArrowFunctions: true,
+            checkFunctionDeclarations: true,
+            checkFunctionExpressions: true,
+            checkMethodDeclarations: true,
+          },
+        ],
+
+        /**
          * No return await
          *
          * See also: https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/return-await.md
