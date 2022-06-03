@@ -189,7 +189,7 @@ module.exports = {
     "import/no-extraneous-dependencies": [
       "error",
       {
-        devDependencies: ["**/*.test.*", "**/test/**/*.*"],
+        devDependencies: true,
       },
     ],
 
