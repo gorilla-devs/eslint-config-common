@@ -171,7 +171,7 @@ module.exports = {
      *
      * See also: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-default-export.md
      */
-    "import/no-default-export": "error",
+    "import/no-default-export": "off",
     "import/prefer-default-export": "off",
 
     /**
@@ -386,6 +386,18 @@ module.exports = {
        * - Jest https://github.com/jest-community/eslint-plugin-jest#rules
        */
       extends: ["plugin:jest/recommended", "plugin:jest/style"],
+    },
+    {
+      // Define the configuration for `.astro` file.
+      files: ["*.astro"],
+      // Allows Astro components to be parsed.
+      parser: "astro-eslint-parser",
+      // Parse the script in `.astro` as TypeScript by adding the following configuration.
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        extraFileExtensions: [".astro"],
+      },
+      rules: {},
     },
   ],
 };
