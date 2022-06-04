@@ -27,6 +27,7 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:jsonc/recommended-with-json",
     "prettier",
   ],
 
@@ -92,6 +93,13 @@ module.exports = {
         allow: ["Quad_*"],
       },
     ],
+
+    /**
+     * Newline at the end of file
+     *
+     * See also https://eslint.org/docs/rules/eol-last
+     */
+    "eol-last": ["error", "always"],
 
     /**
      * Comments
@@ -421,6 +429,10 @@ module.exports = {
         extraFileExtensions: [".astro"],
       },
       rules: {},
+    },
+    {
+      files: ["*.json", "*.json5", "*.jsonc"],
+      parser: "jsonc-eslint-parser",
     },
   ],
 };
