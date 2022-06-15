@@ -29,6 +29,7 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:jsonc/recommended-with-json",
     "prettier",
+    "plugin:i18next/recommended",
   ],
 
   /**

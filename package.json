@@ -14,13 +14,16 @@
     "eslint-plugin-astro": "^0.9.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jest": "26.2.2",
+    "eslint-plugin-jsonc": "^2.3.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-solid": "0.6.1",
     "prettier-plugin-astro": "^0.0.12",
-    "eslint-plugin-jsonc": "^2.3.0",
     "typescript": "^4.7.3"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "eslint-plugin-i18next": "^6.0.0-2"
   }
 }
