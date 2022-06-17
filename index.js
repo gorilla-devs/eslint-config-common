@@ -55,7 +55,7 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx", ".astro"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
         paths: ["node_modules/", "node_modules/@types", "src"],
       },
     },
@@ -69,7 +69,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2019,
     sourceType: "module",
+    extraFileExtensions: [".astro"],
   },
+  parser: "@typescript-eslint/parser",
 
   /**
    * Rules configuration
