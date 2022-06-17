@@ -71,7 +71,6 @@ module.exports = {
     sourceType: "module",
     extraFileExtensions: [".astro"],
   },
-  parser: "@typescript-eslint/parser",
 
   /**
    * Rules configuration
