@@ -204,6 +204,14 @@ module.exports = {
     ],
 
     /**
+     * No unresolved imports
+     *
+     * See also: https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
+     */
+
+    "import/no-unresolved": ["error", { ignore: ["^@icon"] }],
+
+    /**
      * No unsorted import statements
      *
      * See also: https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
