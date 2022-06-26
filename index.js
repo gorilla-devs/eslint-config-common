@@ -209,7 +209,7 @@ module.exports = {
      * See also: https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unresolved.md
      */
 
-    "import/no-unresolved": ["error", { ignore: ["^@icon"] }],
+    "import/no-unresolved": ["error", { ignore: ["^~icon"] }],
 
     /**
      * No unsorted import statements
